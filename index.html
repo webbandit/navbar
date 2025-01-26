@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="build.css">
+    <script src="app.js"></script>
+    <title>Navbar</title>
+</head>
+<body>
+   <header class="flex justify-center items-center bg-gray-200 ">
+    <div class="container max-w-[80%] flex justify-between items-start md:items-center py-2">
+            <span class="text-2xl ">NavBar</span>
+
+            <!-- Navigation Desktop / Tablet -->
+            <nav class="md:flex hidden">
+                <ul class="flex gap-7">
+                    <li class="nav-link"><a href="#">Home</a></li>
+                    <li class="nav-link"><a href="#">Projects</a></li>
+                    <li class="nav-link"><a href="#">Contact</a></li>
+                    <li class="nav-link"><a href="#">About Us</a></li>
+                </ul>
+            </nav>
+            <!-- Mobile menü -->
+            <nav class="nav hidden h-fit bg-gray-200">
+                <ul class="flex flex-col p-16 gap-20">
+                    <li class="nav-link"><a href="#">Home</a></li>
+                    <li class="nav-link"><a href="#">Projects</a></li>
+                    <li class="nav-link"><a href="#">Contact</a></li>
+                    <li class="nav-link"><a href="#">About Us</a></li>
+                </ul>
+                
+            </nav>
+
+            <!-- CTA Button & Mobile Menü BTN -->
+            <div class="flex gap-4">
+                <button class="hidden md:flex bg-black text-white px-2 py-1 rounded-md cursor-pointer">Send us a message</button>
+                <button class="mobile-menu flex md:hidden bg-black text-white px-2 py-1 rounded-md cursor-pointer">Menü</button>
+            </div>
+            
+    </div>
+   </header>
+</body>
+</html>
